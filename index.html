@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rakshit Chaturvedi | Full Stack Developer</title>
+    <meta name="description" content="Rakshit Chaturvedi - BCA student and aspiring MERN / Full Stack Developer.">
+
+    <!-- =========================
+         GOOGLE FONT
+    ========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- =========================
+         FONT AWESOME ICONS
+    ========================== -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================
+         MAIN CSS
+    ========================== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CUSTOM CURSOR
+         JS moves these circles.
+    ========================== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Background decorative blobs -->
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
+    <header class="header" id="header">
+
+        <a href="#home" class="logo">
+            Rakshit<span>.</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#certifications" class="nav-link">Certificates</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <!-- Light/Dark mode button -->
+            <button class="theme-btn" id="theme-btn" aria-label="Change theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <!-- Mobile menu -->
+            <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HOME / HERO SECTION
+        ================================================== -->
+        <section class="home section" id="home">
+
+            <div class="home-content reveal-left">
+
+                <p class="small-heading">
+                    <span class="heading-line"></span>
+                    HELLO, I'M
+                </p>
+
+                <h1>
+                    Rakshit
+                    <span>Chaturvedi</span>
+                </h1>
+
+                <h2>
+                    <span>I am a </span>
+                    <span class="typing" id="typing"></span>
+                </h2>
+
+                <p class="home-description">
+                    BCA student and aspiring MERN / Full Stack Developer
+                    focused on building responsive interfaces, RESTful APIs,
+                    authentication systems and database-driven applications.
+                </p>
+
+                <div class="home-buttons">
+
+                    <a href="#projects"
+                       class="btn btn-primary magnetic">
+                        View My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="assets/Rakshit_Chaturvedi_Resume.pdf"
+                       class="btn btn-outline magnetic"
+                       download>
+                        Download CV
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+
+                </div>
+
+                <div class="social-icons">
+
+                    <a href="https://www.linkedin.com/in/rakshit-chaturvedi-709a4a363"
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="LinkedIn"
+                       class="social magnetic">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="mailto:rakshitchaturvedi198@gmail.com"
+                       aria-label="Email"
+                       class="social magnetic">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="tel:+919236075283"
+                       aria-label="Phone"
+                       class="social magnetic">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 HERO PHOTO
+                 Photo is intentionally CIRCULAR.
+                 Replace assets/profile.jpg to change it.
+            ========================== -->
+            <div class="home-image reveal-right">
+
+                <div class="image-decoration decoration-one"></div>
+                <div class="image-decoration decoration-two"></div>
+
+                <div class="image-ring ring-one"></div>
+                <div class="image-ring ring-two"></div>
+
+                <div class="profile-photo">
+                    <img src="assets/profile.jpg"
+                         alt="Rakshit Chaturvedi">
+                </div>
+
+                <!-- Floating developer badge -->
+                <div class="floating-badge badge-code">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Full Stack</span>
+                </div>
+
+                <div class="floating-badge badge-react">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React</span>
+                </div>
+
+            </div>
+
+            <!-- Scroll indicator -->
+            <a href="#about" class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- =================================================
+             ABOUT SECTION
+        ================================================== -->
+        <section class="about section" id="about">
+
+            <div class="section-heading reveal">
+                <p class="section-label">ABOUT ME</p>
+                <h2>Let me introduce <span>myself.</span></h2>
+                <p>
+                    A quick look at my background, interests and development journey.
+                </p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-image reveal-left">
+                    <div class="about-photo">
+                        <img src="assets/profile.jpg" alt="Rakshit Chaturvedi">
+                    </div>
+                    <div class="about-pattern"></div>
+                    <div class="experience-card">
+                        <strong>2024</strong>
+                        <span>Started BCA & development journey</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal-right">
+
+                    <h3>
+                        BCA Student &amp;
+                        <span>Full Stack Developer.</span>
+                    </h3>
+
+                    <p>
+                        I am a BCA (Computer Applications) student at PSIT College
+                        of Higher Education, Kanpur. I enjoy turning ideas into
+                        responsive and practical web applications.
+                    </p>
+
+                    <p>
+                        My current focus is MERN / Full Stack Development,
+                        including React.js, Node.js, Express.js, JavaScript,
+                        REST APIs and database-driven applications.
+                    </p>
+
+                    <div class="about-info">
+
+                        <div>
+                            <span>Name</span>
+                            <strong>Rakshit Chaturvedi</strong>
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>rakshitchaturvedi198@gmail.com</strong>
+                        </div>
+
+                        <div>
+                            <span>Location</span>
+                            <strong>Kanpur, Uttar Pradesh</strong>
+                        </div>
+
+                        <div>
+                            <span>Education</span>
+                            <strong>BCA — 2024 to 2027</strong>
+                        </div>
+
+                    </div>
+
+                    <a href="assets/Rakshit_Chaturvedi_Resume.pdf"
+                       class="btn btn-primary magnetic"
+                       download>
+                        More About Me
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SKILLS SECTION
+        ================================================== -->
+        <section class="skills section" id="skills">
+
+            <div class="section-heading reveal">
+                <p class="section-label">MY SKILLS</p>
+                <h2>My technical <span>skills.</span></h2>
+                <p>
+                    Technologies I use while building frontend and full-stack projects.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <p>Semantic and accessible website structure.</p>
+                    <div class="skill-progress">
+                        <span data-width="95%"></span>
+                    </div>
+                    <strong>95%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <p>Responsive layouts, animations and modern UI.</p>
+                    <div class="skill-progress">
+                        <span data-width="92%"></span>
+                    </div>
+                    <strong>92%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive functionality and application logic.</p>
+                    <div class="skill-progress">
+                        <span data-width="90%"></span>
+                    </div>
+                    <strong>90%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                    <h3>React.js</h3>
+                    <p>Component-based responsive user interfaces.</p>
+                    <div class="skill-progress">
+                        <span data-width="88%"></span>
+                    </div>
+                    <strong>88%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+                    <h3>Node.js</h3>
+                    <p>Backend services and server-side development.</p>
+                    <div class="skill-progress">
+                        <span data-width="84%"></span>
+                    </div>
+                    <strong>84%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Express.js</h3>
+                    <p>RESTful APIs, routes and backend services.</p>
+                    <div class="skill-progress">
+                        <span data-width="82%"></span>
+                    </div>
+                    <strong>82%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>MySQL</h3>
+                    <p>Relational database design and queries.</p>
+                    <div class="skill-progress">
+                        <span data-width="78%"></span>
+                    </div>
+                    <strong>78%</strong>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Supabase</h3>
+                    <p>Database-backed applications and auth workflows.</p>
+                    <div class="skill-progress">
+                        <span data-width="78%"></span>
+                    </div>
+                    <strong>78%</strong>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICES SECTION
+        ================================================== -->
+        <section class="services section" id="services">
+
+            <div class="section-heading reveal">
+                <p class="section-label">WHAT I DO</p>
+                <h2>My <span>services.</span></h2>
+                <p>
+                    Simple, responsive and practical development solutions.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card reveal">
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>
+                        Responsive websites built with clean HTML, CSS and
+                        JavaScript with smooth interactions.
+                    </p>
+                    <a href="#contact">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>
+                        Modern React.js interfaces focused on usability,
+                        responsiveness and reusable components.
+                    </p>
+                    <a href="#contact">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-number">03</div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>
+                        Complete applications using React, Node.js,
+                        Express.js and databases.
+                    </p>
+                    <a href="#contact">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECTS SECTION
+        ================================================== -->
+        <section class="projects section" id="projects">
+
+            <div class="section-heading reveal">
+                <p class="section-label">MY WORK</p>
+                <h2>Recent <span>projects.</span></h2>
+                <p>
+                    Some of the applications I have worked on.
+                </p>
+            </div>
+
+            <!-- Project filters -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal"
+                         data-category="fullstack">
+
+                    <div class="project-preview rentify-preview">
+                        <div class="preview-window">
+                            <div class="window-bar">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="fake-content">
+                                <div class="fake-nav"></div>
+                                <div class="fake-title"></div>
+                                <div class="fake-grid">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="project-badge">FULL STACK</span>
+                    </div>
+
+                    <div class="project-content">
+                        <p>01 / PROJECT</p>
+                        <h3>Rentify</h3>
+                        <span class="project-line"></span>
+                        <p>
+                            Full-stack room and PG rental platform where users
+                            can browse, search and list rental properties.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal"
+                         data-category="fullstack">
+
+                    <div class="project-preview shop-preview">
+                        <div class="preview-window">
+                            <div class="window-bar">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="fake-content">
+                                <div class="fake-nav"></div>
+                                <div class="fake-title short"></div>
+                                <div class="fake-grid">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="project-badge">FULL STACK</span>
+                    </div>
+
+                    <div class="project-content">
+                        <p>02 / PROJECT</p>
+                        <h3>E-Commerce Website</h3>
+                        <span class="project-line"></span>
+                        <p>
+                            E-commerce application with authentication,
+                            product catalog, cart, orders and REST APIs.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal"
+                         data-category="frontend">
+
+                    <div class="project-preview portfolio-preview portfolio-image-preview">
+                        <img src="assets/portfolio-preview.png"
+                             alt="Rakshit Chaturvedi personal portfolio website preview"
+                             class="portfolio-project-image">
+                        <span class="project-badge">FRONTEND</span>
+                    </div>
+
+                    <div class="project-content">
+                        <p>03 / PROJECT</p>
+                        <h3>Personal Portfolio</h3>
+                        <span class="project-line"></span>
+                        <p>
+                            Responsive portfolio with smooth navigation,
+                            animations, project showcase and contact section.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive UI</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EDUCATION SECTION
+        ================================================== -->
+        <section class="education section" id="education">
+
+            <div class="section-heading reveal">
+                <p class="section-label">MY JOURNEY</p>
+                <h2>Education &amp; <span>certifications.</span></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span>2024 — 2027</span>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p>PSIT College of Higher Education, Kanpur</p>
+                        <strong>CGPA: 7.0</strong>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span>2024</span>
+                        <h3>12th — Science (Mathematics)</h3>
+                        <p>RS Education Centre Inter College, Kanpur</p>
+                        <strong>76%</strong>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span>2022</span>
+                        <h3>10th</h3>
+                        <p>RS Education Centre Inter College, Kanpur</p>
+                        <strong>80%</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CERTIFICATIONS SECTION
+        ================================================== -->
+        <section class="certifications section" id="certifications">
+
+            <div class="section-heading reveal">
+                <p class="section-label">CERTIFICATIONS</p>
+                <h2>My <span>certificates.</span></h2>
+                <p>
+                    Certifications and participation achievements that support my learning journey.
+                </p>
+            </div>
+
+            <div class="certificates-grid">
+
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div>
+                        <span class="certificate-type">CERTIFICATE</span>
+                        <h3>Introduction to Modern AI</h3>
+                        <p>Cisco Networking Academy</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon"><i class="fa-brands fa-python"></i></div>
+                    <div>
+                        <span class="certificate-type">CERTIFICATE</span>
+                        <h3>Programming Fundamentals using Python – Part 1</h3>
+                        <p>Infosys Springboard</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon"><i class="fa-solid fa-database"></i></div>
+                    <div>
+                        <span class="certificate-type">CERTIFICATE</span>
+                        <h3>TCS MasterCraft Data Plus – Data Plus Overview Course</h3>
+                        <p>TCS MasterCraft Academy</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon"><i class="fa-solid fa-award"></i></div>
+                    <div>
+                        <span class="certificate-type">PARTICIPATION</span>
+                        <h3>International Conference (ICONSDG 2025)</h3>
+                        <p>Certificate of Participation, PSIT College of Higher Education</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT SECTION
+        ================================================== -->
+        <section class="contact section" id="contact">
+
+            <div class="section-heading reveal">
+                <p class="section-label">CONTACT ME</p>
+                <h2>Let's work <span>together.</span></h2>
+                <p>
+                    Looking for an internship or entry-level MERN / Full Stack opportunity?
+                    Let's connect.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-left reveal-left">
+
+                    <h3>Have an idea?</h3>
+                    <p>
+                        Whether you want to discuss a project, an opportunity
+                        or simply connect, my inbox is always open.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <a href="mailto:rakshitchaturvedi198@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <strong>rakshitchaturvedi198@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919236075283">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <strong>+91 9236075283</strong>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rakshit-chaturvedi-709a4a363"
+                           target="_blank"
+                           rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <strong>rakshit-chaturvedi-709a4a363</strong>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- This form opens the user's email client.
+                     For Formspree/backend later, change the JS handler. -->
+                <form class="contact-form reveal-right"
+                      id="contact-form">
+
+                    <div class="input-row">
+
+                        <div class="input-box">
+                            <input type="text"
+                                   id="name"
+                                   required
+                                   placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="email"
+                                   id="email"
+                                   required
+                                   placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text"
+                               id="subject"
+                               required
+                               placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+
+                    <div class="input-box textarea-box">
+                        <textarea id="message"
+                                  rows="6"
+                                  required
+                                  placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-primary magnetic">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <p id="form-note" class="form-note"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <a href="#home" class="logo">Rakshit<span>.</span></a>
+            <p>Building the web, one project at a time.</p>
+        </div>
+
+        <div class="footer-socials">
+
+            <a href="https://www.linkedin.com/in/rakshit-chaturvedi-709a4a363"
+               target="_blank"
+               rel="noopener">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:rakshitchaturvedi198@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="tel:+919236075283">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © <span id="year"></span> Rakshit Chaturvedi. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Back to top -->
+    <a href="#home"
+       class="back-top"
+       id="back-top"
+       aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
